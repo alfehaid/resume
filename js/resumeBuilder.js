@@ -11,7 +11,7 @@ var bio = {
     welcomeMessage: "welcome to my resume , hope you are interesting",
     skills: ["Coding", "Designing"],
     biopic: "images/150.png",
-}
+};
 bio.display = function() {
     var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
     $("#header").prepend(formattedRole);
@@ -76,7 +76,7 @@ var education = {
         majors: ["Front End Developer"],
         url: "www.bct.edu.sa"
     }]
-}
+};
 education.display = function() {
     $("#education").append(HTMLschoolStart);
     for (i = 0; i < education.schools.length; i++) {
@@ -121,7 +121,7 @@ var work = {
             description: "COOP 3 months trainig in Saudi Aramco in IT depertment in PHP environment."
         }
     ]
-}
+};
 work.display = function() {
     $("#workExperience").append(HTMLworkStart);
 
@@ -147,7 +147,7 @@ var projects = {
         description: "Mobile Application for Student Registration",
         images: ["images/project.png"]
     }]
-}
+};
 projects.display = function() {
     $("#projects").append(HTMLprojectStart);
     for (i = 0; i < projects.projects.length; i++) {
@@ -169,3 +169,6 @@ bio.display();
 education.display();
 work.display();
 projects.display();
+
+
+$("#mapDiv").append(googleMap);
